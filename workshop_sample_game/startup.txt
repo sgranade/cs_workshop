@@ -1,0 +1,77 @@
+*title Stephen Granade's Test Game
+*author Stephen Granade
+
+*create implicit_control_flow true
+*create companion_name "BUG"
+*comment 1=bernice 2=walla 3=maris
+*create companion_e 0
+*create trait_wise 50
+*comment bold/cautious
+*create trait_bold 50
+
+It is time. The dragon awaits. Who will you take with you on this epic adventure?
+
+*choice
+    #Bernice the Brave.
+        *set companion_name "bernice"
+        *set companion_e 1
+        *set trait_bold %+ 10
+        Bernice stands to attention. "Ready to join you!"
+    #Walla the Wise.
+        *set companion_name "walla"
+        *set companion_e 2
+        *set trait_wise %+ 10
+        Walla nods. "Of course I'll come with you."
+    #Maris the Meek.
+        "Are you sure?" Maris asks. "Wouldn't you rather take Walla? Or Bernice?"
+
+        *choice
+            #"I'm sure, Maris."
+                *set companion_name "maris"
+                *set companion_e 3
+                *set trait_bold %- 10
+                Maris isn't excited about this, but sighs and says, "Fine."
+            #"I can take Bernice instead."
+                *set companion_name "bernice"
+                *set companion_e 1
+                *set trait_bold %+ 10
+                "I'd be honored to join you," Bernice says,
+                *goto maris_is_relieved
+            #"Walla, why don't you come, then?"
+                *set companion_name "walla"
+                *set companion_e 2
+                *set trait_wise %+ 10
+                "Of course," Walla says,
+                *label maris_is_relieved
+                much to Maris's relief.
+
+You set off with $!{companion_name} to brave the dragon.
+@{companion_e "I can't wait to see this dragon!" Bernice says.|"We will have to be clever in dealing with the dragon," Walla says.|"What if we didn't go to see the dragon?" Maris asks.}
+
+All too quickly you arrive at the dragon's house. As you knock, he noses open the very large door to his very large cottage. "Yes?"
+
+Now that it's time to ask him out on a date, you're not sure of the best approach.
+
+*choice
+    #Boldly ask the dragon on a date.
+        *comment todo
+        *if trait_bold > 50
+            *comment todo success
+        *else
+            *comment todo failure
+    #Wisely see if the dragon is in a good mood.
+        *comment todo
+        *if trait_wise > 50
+            *comment todo success
+        *else
+            *comment todo failure
+    #Meekly request that the dragon consider going on a date with you.
+        *comment todo flavor text
+        *if trait_bold < 50
+            *comment todo success!
+        *else
+            *comment todo failure!
+
+
+
+*finish

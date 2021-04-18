@@ -1,0 +1,26 @@
+*comment --== SCENE VARIABLES ==--
+*comment todo I typically put scene variables (that you create with *temp) at the top of the scene file instead of scattering them throughout the scene.
+
+*comment --== CHAPTER 1 ==--
+*label start_of_chapter_1
+*comment todo I like to put labels like this at the top of the file so I can search for them and get to them quickly.
+
+*comment todo I find it helpful to have labels to make it easy to find them.
+*label scene_name_of_a_scene
+
+*comment todo A scene goes here
+
+*label scene_name_of_another_scene
+
+*comment todo A scene goes here
+
+*label scene_name_of_yet_another_scene
+
+*comment todo A scene goes here
+
+*finish
+
+*comment todo if you need any subroutines in the startup file, put them here. Otherwise, you can delete this section (including the label)
+
+*comment --== SUBROUTINES ==--
+*label subroutines

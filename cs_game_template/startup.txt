@@ -1,0 +1,31 @@
+*title <todo Game Template>
+*author <todo Your Name Here>
+*scene_list
+    startup
+    1_first_chapter
+
+*create implicit_control_flow true
+
+*comment --== Achievements ==--
+*comment todo if your game will have achievements, create them here
+
+*comment --== Stats ==--
+*comment # Primary Stats
+*comment todo assuming you're following the CoG approach, put your skills & personality traits here
+
+*comment # Secondary Stats
+*comment todo Secondary stats capture long-term goals your player will have
+
+*comment # Relationship Stats
+*comment todo stats for NPCs the player can have stats-driven relationships with
+
+*comment --== Chapter Variables ==--
+*comment # Chapter 1
+*comment todo I'd suggest grouping your global variables by the chapter they first show up in
+
+*finish
+
+*comment todo if you need any subroutines in the startup file, put them here. Otherwise, you can delete this section (including the label)
+
+*comment --== Subroutines ==--
+*label subroutines

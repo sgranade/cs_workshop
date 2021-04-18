@@ -1,0 +1,4 @@
+*label stats_screen
+
+*comment `choicescript_stats.txt` is where you display your game's stats in a stat chart.
+*comment For more information, please see https://choicescriptdev.fandom.com/wiki/Choicescript_stats.txt
